@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>pagina</title>
+
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.2.1/annyang.min.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("load",()=>{
+        if(annyang){
+        var comandos={
+          'escribir *valor':function(valor){
+            alert(valor);
+          }
+        }
+        annyang.addCommands(comandos);
+        annyang.setLanguage("es-MX");
+        annyang.debug();
+        annyang.start();
+        }
+      });
+    </script>
+  </body>
+</html>

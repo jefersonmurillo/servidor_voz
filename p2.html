@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-lastest.js"></script>
+    <script>
+         if (document.createElement("input").webkitSpeech === undefined)  {
+          document.write("<p>Sorry, you phone not pluging.</p>");
+         }
+         function mostrar() {
+          var value = $("#mivoz").val();
+          $("span.var").text(value);
+         }
+    </script>
+</head>
+<body>
+
+<div>
+ <h1></h1>
+ <form>
+  <input nombre="mivoz" id="mivoz" type="text" x-webkit-speech speech error onwebkitspeechchange="mostrar();"  />
+ </form>
+
+ <p> "<span class="var"><span>".</p>
+</div>
+  
+</body>﻿
